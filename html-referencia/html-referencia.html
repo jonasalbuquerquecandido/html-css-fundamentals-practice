@@ -1,0 +1,551 @@
+<!-- ========================================
+     HTML - GUIA DE REFERÊNCIA RÁPIDA
+     ======================================== -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Exemplo</title>
+</head>
+<body>
+
+<!-- ========================================
+     1. ESTRUTURA BÁSICA
+     ======================================== -->
+
+<!-- DOCTYPE - Define o tipo de documento (obrigatório) -->
+<!-- <!DOCTYPE html> -->
+
+<!-- <html> - Elemento raiz que envolve todo o conteúdo -->
+<!-- <head> - Contém metadados e não é exibido na página -->
+<!-- <body> - Contém todo o conteúdo visível -->
+
+
+<!-- ========================================
+     2. METADADOS (dentro de <head>)
+     ======================================== -->
+
+<!-- Charset - Define a codificação de caracteres -->
+<meta charset="UTF-8">
+
+<!-- Viewport - Responsividade para dispositivos móveis -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Descrição da página (usada por buscadores) -->
+<meta name="description" content="Descrição da sua página">
+
+<!-- Palavras-chave (SEO) -->
+<meta name="keywords" content="html, css, javascript">
+
+<!-- Autor da página -->
+<meta name="author" content="Seu Nome">
+
+<!-- Título da página (aparece na aba do navegador) -->
+<title>Título da Página</title>
+
+<!-- Link para arquivo CSS externo -->
+<!-- <link rel="stylesheet" href="style.css"> -->
+
+<!-- Estilo CSS interno -->
+<!-- <style>
+    body { background-color: #f0f0f0; }
+</style> -->
+
+
+<!-- ========================================
+     3. TÍTULOS E TEXTOS
+     ======================================== -->
+
+<h1>Título Principal (H1)</h1>
+<h2>Subtítulo (H2)</h2>
+<h3>Subsubtítulo (H3)</h3>
+<h4>Cabeçalho 4</h4>
+<h5>Cabeçalho 5</h5>
+<h6>Cabeçalho 6</h6>
+
+<!-- Parágrafo -->
+<p>Este é um parágrafo de texto normal.</p>
+
+<!-- Quebra de linha -->
+<p>Linha 1<br>Linha 2</p>
+
+<!-- Linha horizontal -->
+<hr>
+
+<!-- Texto pré-formatado (mantém espaços e quebras) -->
+<pre>
+    Texto com
+    espaços e
+    quebras preservadas
+</pre>
+
+<!-- Texto citado -->
+<blockquote>
+    "Esta é uma citação importante"
+</blockquote>
+
+<!-- Abreviação -->
+<p>A <abbr title="Hypertext Markup Language">HTML</abbr> é essencial.</p>
+
+<!-- Endereço -->
+<address>
+    Rua Exemplo, 123<br>
+    São Paulo, SP
+</address>
+
+
+<!-- ========================================
+     4. FORMATAÇÃO DE TEXTO
+     ======================================== -->
+
+<!-- Negrito (importante semanticamente) -->
+<strong>Texto importante</strong>
+
+<!-- Negrito (apenas estilo) -->
+<b>Texto em negrito</b>
+
+<!-- Itálico (importante semanticamente) -->
+<em>Texto enfatizado</em>
+
+<!-- Itálico (apenas estilo) -->
+<i>Texto em itálico</i>
+
+<!-- Marcado/Destacado -->
+<mark>Texto marcado</mark>
+
+<!-- Deletado -->
+<del>Texto deletado</del>
+
+<!-- Inserido -->
+<ins>Texto inserido</ins>
+
+<!-- Subscrito (pequeno, abaixo) -->
+H<sub>2</sub>O
+
+<!-- Sobrescrito (pequeno, acima) -->
+2<sup>3</sup> = 8
+
+<!-- Código -->
+<code>console.log("Hello")</code>
+
+<!-- Pequeno texto -->
+<small>Texto pequeno</small>
+
+
+<!-- ========================================
+     5. LISTAS
+     ======================================== -->
+
+<!-- Lista não ordenada (com bullets) -->
+<ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+</ul>
+
+<!-- Lista ordenada (com números) -->
+<ol>
+    <li>Primeiro</li>
+    <li>Segundo</li>
+    <li>Terceiro</li>
+</ol>
+
+<!-- Lista de descrição -->
+<dl>
+    <dt>HTML</dt>
+    <dd>Linguagem de marcação para web</dd>
+    
+    <dt>CSS</dt>
+    <dd>Linguagem para estilização</dd>
+    
+    <dt>JavaScript</dt>
+    <dd>Linguagem de programação para web</dd>
+</dl>
+
+<!-- Lista aninhada -->
+<ul>
+    <li>Front-end
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+    </li>
+    <li>Back-end</li>
+</ul>
+
+
+<!-- ========================================
+     6. LINKS
+     ======================================== -->
+
+<!-- Link simples -->
+<a href="https://www.google.com">Google</a>
+
+<!-- Link com alvo (abre em nova aba) -->
+<a href="https://www.google.com" target="_blank">Google (nova aba)</a>
+
+<!-- Link para email -->
+<a href="mailto:seu.email@gmail.com">Enviar Email</a>
+
+<!-- Link para telefone -->
+<a href="tel:+5511999999999">Ligar</a>
+
+<!-- Link para download -->
+<a href="arquivo.pdf" download>Baixar PDF</a>
+
+<!-- Link para outra página do site -->
+<a href="sobre.html">Sobre</a>
+
+<!-- Link para seção da página (âncora) -->
+<a href="#secao1">Ir para Seção 1</a>
+<h2 id="secao1">Seção 1</h2>
+
+
+<!-- ========================================
+     7. IMAGENS
+     ======================================== -->
+
+<!-- Imagem básica -->
+<img src="imagem.jpg" alt="Descrição da imagem">
+
+<!-- Imagem com dimensões -->
+<img src="imagem.jpg" alt="Descrição" width="300" height="200">
+
+<!-- Imagem responsiva -->
+<img src="imagem.jpg" alt="Descrição" width="100%" style="max-width: 400px;">
+
+<!-- Imagem como link -->
+<a href="pagina.html">
+    <img src="imagem.jpg" alt="Clique para ir">
+</a>
+
+<!-- Figura com legenda -->
+<figure>
+    <img src="imagem.jpg" alt="Gráfico de vendas">
+    <figcaption>Gráfico de vendas mensais</figcaption>
+</figure>
+
+<!-- Imagem com múltiplas fontes (responsiva) -->
+<picture>
+    <source media="(max-width: 600px)" srcset="imagem-pequena.jpg">
+    <source media="(max-width: 1200px)" srcset="imagem-media.jpg">
+    <img src="imagem-grande.jpg" alt="Descrição">
+</picture>
+
+
+<!-- ========================================
+     8. FORMULÁRIOS
+     ======================================== -->
+
+<!-- Formulário básico -->
+<form action="/enviar" method="POST">
+    
+    <!-- Entrada de texto -->
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+    
+    <!-- Email -->
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    
+    <!-- Senha -->
+    <label for="senha">Senha:</label>
+    <input type="password" id="senha" name="senha" required>
+    
+    <!-- Número -->
+    <label for="idade">Idade:</label>
+    <input type="number" id="idade" name="idade" min="0" max="120">
+    
+    <!-- Data -->
+    <label for="data">Data:</label>
+    <input type="date" id="data" name="data">
+    
+    <!-- Hora -->
+    <label for="hora">Hora:</label>
+    <input type="time" id="hora" name="hora">
+    
+    <!-- Telefone -->
+    <label for="telefone">Telefone:</label>
+    <input type="tel" id="telefone" name="telefone">
+    
+    <!-- Arquivo -->
+    <label for="arquivo">Enviar arquivo:</label>
+    <input type="file" id="arquivo" name="arquivo" accept=".pdf,.doc">
+    
+    <!-- Checkbox (múltiplas seleções) -->
+    <label>Selecione seus interesses:</label>
+    <input type="checkbox" id="html" name="interesses" value="html">
+    <label for="html">HTML</label>
+    
+    <input type="checkbox" id="css" name="interesses" value="css">
+    <label for="css">CSS</label>
+    
+    <input type="checkbox" id="js" name="interesses" value="js">
+    <label for="js">JavaScript</label>
+    
+    <!-- Radio button (apenas uma seleção) -->
+    <label>Escolha um nível:</label>
+    <input type="radio" id="iniciante" name="nivel" value="iniciante">
+    <label for="iniciante">Iniciante</label>
+    
+    <input type="radio" id="intermediario" name="nivel" value="intermediario">
+    <label for="intermediario">Intermediário</label>
+    
+    <input type="radio" id="avancado" name="nivel" value="avancado">
+    <label for="avancado">Avançado</label>
+    
+    <!-- Select (dropdown) -->
+    <label for="pais">País:</label>
+    <select id="pais" name="pais">
+        <option value="">-- Selecione --</option>
+        <option value="brasil">Brasil</option>
+        <option value="portugal">Portugal</option>
+        <option value="eua">EUA</option>
+    </select>
+    
+    <!-- TextArea (texto multilinha) -->
+    <label for="mensagem">Mensagem:</label>
+    <textarea id="mensagem" name="mensagem" rows="5" cols="40" placeholder="Digite sua mensagem..."></textarea>
+    
+    <!-- Botão enviar -->
+    <button type="submit">Enviar</button>
+    
+    <!-- Botão resetar -->
+    <button type="reset">Limpar</button>
+    
+    <!-- Botão comum -->
+    <button type="button">Clique aqui</button>
+    
+</form>
+
+
+<!-- ========================================
+     9. TABELAS
+     ======================================== -->
+
+<table border="1">
+    <!-- Cabeçalho da tabela -->
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+            <th>Cidade</th>
+        </tr>
+    </thead>
+    
+    <!-- Corpo da tabela -->
+    <tbody>
+        <tr>
+            <td>João</td>
+            <td>25</td>
+            <td>São Paulo</td>
+        </tr>
+        <tr>
+            <td>Maria</td>
+            <td>30</td>
+            <td>Rio de Janeiro</td>
+        </tr>
+    </tbody>
+    
+    <!-- Rodapé da tabela -->
+    <tfoot>
+        <tr>
+            <td colspan="3">Total: 2 pessoas</td>
+        </tr>
+    </tfoot>
+</table>
+
+
+<!-- ========================================
+     10. ESTRUTURA SEMÂNTICA
+     ======================================== -->
+
+<!-- Cabeçalho da página -->
+<header>
+    <h1>Meu Site</h1>
+    <p>Bem-vindo ao meu site</p>
+</header>
+
+<!-- Barra de navegação -->
+<nav>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/sobre">Sobre</a></li>
+        <li><a href="/contato">Contato</a></li>
+    </ul>
+</nav>
+
+<!-- Conteúdo principal -->
+<main>
+    <!-- Artigo -->
+    <article>
+        <h2>Título do Artigo</h2>
+        <p>Conteúdo do artigo...</p>
+    </article>
+    
+    <!-- Seção -->
+    <section id="secao1">
+        <h2>Seção 1</h2>
+        <p>Conteúdo da seção...</p>
+    </section>
+    
+    <!-- Barra lateral -->
+    <aside>
+        <h3>Links Úteis</h3>
+        <ul>
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+        </ul>
+    </aside>
+</main>
+
+<!-- Rodapé da página -->
+<footer>
+    <p>&copy; 2024 Meu Site. Todos os direitos reservados.</p>
+</footer>
+
+
+<!-- ========================================
+     11. MÍDIA (ÁUDIO E VÍDEO)
+     ======================================== -->
+
+<!-- Áudio -->
+<audio controls>
+    <source src="audio.mp3" type="audio/mpeg">
+    Seu navegador não suporta áudio.
+</audio>
+
+<!-- Áudio com atributos -->
+<audio controls autoplay loop>
+    <source src="audio.mp3" type="audio/mpeg">
+</audio>
+
+<!-- Vídeo -->
+<video width="320" height="240" controls>
+    <source src="video.mp4" type="video/mp4">
+    Seu navegador não suporta vídeo.
+</video>
+
+<!-- Vídeo responsivo -->
+<video width="100%" style="max-width: 600px;" controls>
+    <source src="video.mp4" type="video/mp4">
+</video>
+
+<!-- Vídeo do YouTube (iframe) -->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+
+
+<!-- ========================================
+     12. ELEMENTOS INTERATIVOS
+     ======================================== -->
+
+<!-- Detalhes/Resumo (accordion) -->
+<details>
+    <summary>Clique para expandir</summary>
+    <p>Conteúdo oculto que aparece ao clicar</p>
+</details>
+
+<!-- Progresso -->
+<progress value="70" max="100"></progress>
+
+<!-- Medidor -->
+<meter value="6" min="0" max="10"></meter>
+
+<!-- Diálogo/Modal -->
+<dialog id="modal">
+    <p>Este é um modal</p>
+    <button onclick="document.getElementById('modal').close()">Fechar</button>
+</dialog>
+
+
+<!-- ========================================
+     13. ATRIBUTOS GLOBAIS COMUNS
+     ======================================== -->
+
+<!-- id - Identificador único -->
+<div id="principal">Conteúdo principal</div>
+
+<!-- class - Classe para estilização -->
+<div class="container">Conteúdo</div>
+
+<!-- style - Estilo inline (evitar usar) -->
+<p style="color: red;">Texto vermelho</p>
+
+<!-- title - Dica que aparece ao passar o mouse -->
+<p title="Olá mundo!">Passe o mouse aqui</p>
+
+<!-- data-* - Atributo customizado -->
+<div data-id="123" data-nome="João">Elemento com dados</div>
+
+<!-- hidden - Oculta o elemento -->
+<p hidden>Texto oculto</p>
+
+<!-- disabled - Desabilita o elemento -->
+<button disabled>Botão desabilidado</button>
+
+<!-- contenteditable - Permite editar o conteúdo -->
+<p contenteditable="true">Clique para editar</p>
+
+
+<!-- ========================================
+     14. COMENTÁRIOS
+     ======================================== -->
+
+<!-- Este é um comentário em HTML -->
+<!-- Comentários não aparecem na página -->
+
+
+<!-- ========================================
+     15. ENTIDADES HTML ESPECIAIS
+     ======================================== -->
+
+<!-- Espaço não-quebrável -->
+&nbsp;
+
+<!-- Símbolos comuns -->
+&copy;  <!-- © -->
+&reg;   <!-- ® -->
+&trade; <!-- ™ -->
+&euro;  <!-- € -->
+&pound; <!-- £ -->
+&yen;   <!-- ¥ -->
+
+<!-- Símbolos matemáticos -->
+&lt;    <!-- < -->
+&gt;    <!-- > -->
+&amp;   <!-- & -->
+&quot;  <!-- " -->
+&apos;  <!-- ' -->
+
+
+<!-- ========================================
+     16. EXEMPLOS PRÁTICOS
+     ======================================== -->
+
+<!-- Exemplo 1: Página Simples -->
+<section style="border: 1px solid #ccc; padding: 20px; margin: 20px 0;">
+    <h2>Exemplo: Cartão de Perfil</h2>
+    <div>
+        <img src="foto.jpg" alt="Foto de perfil" width="100" style="border-radius: 50%;">
+        <h3>João Silva</h3>
+        <p>Desenvolvedor Web</p>
+        <p>Email: <a href="mailto:joao@email.com">joao@email.com</a></p>
+    </div>
+</section>
+
+<!-- Exemplo 2: Formulário de Contato -->
+<section style="border: 1px solid #ccc; padding: 20px; margin: 20px 0;">
+    <h2>Exemplo: Formulário de Contato</h2>
+    <form>
+        <input type="text" placeholder="Seu nome" required style="display: block; margin: 10px 0; padding: 10px; width: 100%; max-width: 300px;">
+        <input type="email" placeholder="Seu email" required style="display: block; margin: 10px 0; padding: 10px; width: 100%; max-width: 300px;">
+        <textarea placeholder="Sua mensagem" rows="5" style="display: block; margin: 10px 0; padding: 10px; width: 100%; max-width: 300px;"></textarea>
+        <button type="submit" style="padding: 10px 20px; background-color: blue; color: white; border: none; cursor: pointer;">Enviar</button>
+    </form>
+</section>
+
+</body>
+</html>
